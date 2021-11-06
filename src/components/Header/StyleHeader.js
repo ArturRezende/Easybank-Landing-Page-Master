@@ -26,14 +26,15 @@ export const ComponentHeader = styled.header`
 
       li {
         display: block;
+
         a {
           color: var(--Grayish-Blue);
           padding-bottom: 20px;
 
           &:hover {
-            border-bottom: 10px solid;
+            color: var(--Dark-Blue);
+            border-bottom: 5px solid;
             border-image-slice: 1;
-            border-width: 5px;
             border-image-source: linear-gradient(
               to right,
               var(--Lime-Green),
@@ -42,6 +43,18 @@ export const ComponentHeader = styled.header`
           }
         }
       }
+    }
+  }
+
+  .request-invite {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+
+    .request-invite {
+      display: none;
     }
   }
 
@@ -68,9 +81,11 @@ export const ComponentHeader = styled.header`
         margin: 30px auto 0 auto;
         padding: 25px;
         border-radius: 7px;
+        flex-direction: column;
 
         li + li {
           margin-top: 20px;
+          margin-left: 0;
         }
 
         li {
@@ -78,6 +93,7 @@ export const ComponentHeader = styled.header`
 
           a {
             color: var(--Dark-Blue);
+            padding-bottom: 5px;
           }
         }
       }

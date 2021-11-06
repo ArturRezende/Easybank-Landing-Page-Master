@@ -24,6 +24,7 @@ const Header = (props) => {
         type="button"
         onClick={() => {
           setMenuIcon(!menuIcon);
+
           if (menu === false) {
             navbarRef.current.classList.remove("fadeOut");
             navbarRef.current.style.display = "block";
@@ -38,6 +39,14 @@ const Header = (props) => {
               navbarRef.current.style.display = "none";
             }, 1000);
 
+            window.onresize = () => {
+              if (window.innerWidth > 601) {
+                navbarRef.current.classList.remove("fadeOut");
+                navbarRef.current.style.display = "flex";
+              } else {
+                navbarRef.current.style.display = "none";
+              }
+            };
             setMenu(false);
           }
         }}
