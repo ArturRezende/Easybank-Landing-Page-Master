@@ -1,0 +1,51 @@
+:root {
+    /*Primary*/
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    /*Neutral*/
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* ======= button - request invite =======*/
+
+.request-invite {
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    color: var(--White);
+    font-weight: 700;
+    width: 150px;
+}
+
+.request-invite:hover {
+    color: var(--Light-Grayish-Blue);
+}
+
+/* ======= animation - header =======*/
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+  
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+} 
