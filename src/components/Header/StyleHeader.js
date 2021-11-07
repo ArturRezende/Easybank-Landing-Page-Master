@@ -9,6 +9,7 @@ export const ComponentHeader = styled.header`
   padding: 20px 25px;
   position: fixed;
   width: 100%;
+  z-index: 999;
 
   .header__menuControl {
     background-color: transparent;
@@ -59,15 +60,22 @@ export const ComponentHeader = styled.header`
   }
 
   @media screen and (max-width: 600px) {
-    padding: 25px;
+    padding: 20px;
+
+    .header__logo {
+      position: relative;
+      top: 4px;
+    }
 
     .header__menuControl {
       display: block;
+      position: relative;
+      top: 3px;
     }
 
     .header__nave {
       position: absolute;
-      top: 70px;
+      top: 65px;
       left: 0;
       z-index: 99;
       width: 100%;
@@ -94,6 +102,18 @@ export const ComponentHeader = styled.header`
           a {
             color: var(--Dark-Blue);
             padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
+    .header__nave {
+      ul {
+        li {
+          a {
+            padding-bottom: 6px;
           }
         }
       }
