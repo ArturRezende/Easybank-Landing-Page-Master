@@ -42,7 +42,7 @@ export const HeroBg = styled.section`
   .hero__img {
     background: url(${HeroDesktop}) no-repeat;
     background-size: 120% 105%;
-    background-position: 50px -100px;
+    background-position: 0 -125px;
     width: 100%;
     overflow-x: hidden;
 
@@ -100,7 +100,6 @@ export const HeroBg = styled.section`
       p {
         margin: 40px 20px;
         font-size: 14px;
-        line-height: 1.5;
         position: static;
         width: 90%;
         text-align: center;
