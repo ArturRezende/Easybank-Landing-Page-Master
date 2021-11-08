@@ -50,8 +50,8 @@ export const HeroBg = styled.section`
       width: 90%;
       display: block;
       position: relative;
-      right: -160px;
-      top: -8px;
+      right: -185px;
+      top: -20px;
     }
   }
 
@@ -119,7 +119,7 @@ export const HeroBg = styled.section`
       img {
         position: relative;
         right: 0;
-        top: -40px;
+        top: -55px;
         margin: 0 auto;
       }
     }
