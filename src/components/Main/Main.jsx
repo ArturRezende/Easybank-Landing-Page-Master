@@ -11,16 +11,6 @@ const Main = (props) => {
       <Hero />
       <WhyEasyBank />
       <LatestArticles />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </main>
   );
 };
