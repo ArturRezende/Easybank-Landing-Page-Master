@@ -6,9 +6,9 @@ import Main from "./Main/Main";
 
 export default function App() {
   return (
-    <div>
+    <>
       <Header />
       <Main />
-    </div>
+    </>
   );
 }
