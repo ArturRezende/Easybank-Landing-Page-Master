@@ -1,21 +1,28 @@
 import styled from "styled-components";
 
 export const LatesArticle = styled.article`
+  background-color: #fafafa;
+  margin-top: -100px;
+  padding: 20px 0 50px 0;
+  overflow-x: hidden;
+
   .lates-article__title {
     color: var(--Dark-Blue);
     font-weight: 400;
     text-align: left;
-    margin: 7% 0 4% 8%;
+    margin: 7% 0 2% 7%;
   }
 
   .lates-article__container {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
 
     .lates-article__content {
       width: 25%;
       margin-left: 20px;
+      background-color: #ffffff;
+      border-radius: 0 0 5px 5px;
 
       img {
         display: block;
@@ -44,8 +51,9 @@ export const LatesArticle = styled.article`
 
         .lates-article__comment {
           color: var(--Grayish-Blue);
-          font-size: 14px;
+          font-size: 15px;
           width: 100%;
+          margin-bottom: 30px;
         }
       }
     }
@@ -60,26 +68,31 @@ export const LatesArticle = styled.article`
       text-align: left;
       position: relative;
       right: -50px;
-      margin: 9% 0 50px 0;
+      margin: 5% 0 50px 0;
     }
 
     .lates-article__container {
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 100%;
+      margin: 0 auto;
 
       .lates-article__content {
-        width: 50%;
-        margin-left: 0;
+        width: 42%;
+        margin: 0 auto 30px auto;
 
         img {
-          width: 80%;
+          width: 100%;
         }
 
         .lates-article__description {
           .lates-article__subtitle {
-            width: 80%;
+            width: 85%;
             font-size: 18px;
+          }
+
+          .lates-article__comment {
+            width: 100%;
+            font-size: 13px;
           }
         }
       }
@@ -92,23 +105,27 @@ export const LatesArticle = styled.article`
     }
 
     .lates-article__title {
-      margin: 20% 0 50px 0;
+      margin: 40px auto 30px auto;
       text-align: center;
+      font-size: 2rem;
+      width: 85%;
     }
 
     .lates-article__container {
       flex-direction: column;
-      width: 100%;
+      width: 85%;
+      margin: 0 auto;
+
       .lates-article__content {
         margin-left: 0;
         width: 100%;
 
         img {
-          width: 85%;
+          width: 100%;
         }
 
         .lates-article__description {
-          width: 65%;
+          width: 80%;
 
           .lates-article__subtitle {
             width: 95%;
