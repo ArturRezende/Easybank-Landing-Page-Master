@@ -51,7 +51,7 @@ export const LatesArticle = styled.article`
 
         .lates-article__comment {
           color: var(--Grayish-Blue);
-          font-size: 15px;
+          font-size: 14px;
           width: 100%;
           margin-bottom: 30px;
         }
