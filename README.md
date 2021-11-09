@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [easybank-solution](https://www.frontendmentor.io/solutions/project-encoded-with-html5-css3-vanilla-js-reactjs-styledcomponen-c3BcztSpN)
 - Live Site URL: [easybank-landing-page-master](https://easybank-landing-page-master.netlify.app)
 
 ## My process
